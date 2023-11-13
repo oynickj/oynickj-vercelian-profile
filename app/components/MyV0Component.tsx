@@ -1,34 +1,17 @@
 /**
  * v0 by Vercel.
- * @see https://v0.dev/t/x8GKxPdidFX
+ * @see https://v0.dev/t/EK8CUYHCrpy
  */
-import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 
 export default function Component() {
   return (
-    <div className="mx-auto max-w-md space-y-6">
-      <div className="space-y-2 text-center">
-        <h1 className="text-3xl font-bold">Guestbook</h1>
-        <p className="text-zinc-500 dark:text-zinc-400">Please sign in and leave your message</p>
+    <section className="w-full flex flex-col items-center justify-center h-screen bg-gray-100 dark:bg-gray-800">
+      <h1 className="text-3xl font-bold mb-4 dark:text-white">v0 Motivational Quotes</h1>
+      <Button className="mb-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Quote</Button>
+      <div className="p-4 max-w-xl mx-auto bg-white rounded-xl shadow-md space-x-2 text-center dark:bg-gray-900">
+        <p className="text-gray-500 dark:text-gray-300">Click the button to display a motivational quote.</p>
       </div>
-      <div className="space-y-4">
-        <div className="space-y-2">
-          <Label htmlFor="visitor-name">Name</Label>
-          <Input id="visitor-name" placeholder="Your Name" required />
-        </div>
-        <div className="space-y-2">
-          <Label htmlFor="visitor-message">Message</Label>
-          <Textarea id="visitor-message" placeholder="Your Message" required />
-        </div>
-        <Button className="w-full" type="submit">
-          Submit Entry
-        </Button>
-        <Button className="w-full mt-4 bg-gray-300 dark:bg-gray-600">View Guest Book</Button>
-      </div>
-    </div>
+    </section>
   )
 }
-
