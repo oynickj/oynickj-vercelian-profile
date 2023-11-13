@@ -1,6 +1,6 @@
 /**
  * v0 by Vercel.
- * @see https://v0.dev/t/3zoEzlkeoBR
+ * @see https://v0.dev/t/x8GKxPdidFX
  */
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
@@ -23,9 +23,10 @@ export default function Component() {
           <Label htmlFor="visitor-message">Message</Label>
           <Textarea id="visitor-message" placeholder="Your Message" required />
         </div>
-        <Button className="w-full transform transition-transform hover:rotate-180 focus:rotate-180" type="submit">
+        <Button className="w-full" type="submit">
           Submit Entry
         </Button>
+        <Button className="w-full mt-4 bg-gray-300 dark:bg-gray-600">View Guest Book</Button>
       </div>
     </div>
   )
